@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import ProgressBar from './components/PorgressBar/ProgressBar';
+import InputLabel from './components/Label/InputLabel';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <ProgressBar percent={60} width={500} height={100}/>
+          <InputLabel htmlFor="password" label="password" required/>
       </div>
     );
   }
