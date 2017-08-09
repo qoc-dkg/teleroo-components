@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 50px;
 }
 
 .App-logo {
@@ -21,4 +22,52 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/*comment component classes*/
+.author > i {
+  color: #4285f4;
+  margin-right: 5px;
+}
+.author {
+  font-weight: 600;
+}
+.commentTitle > .author {
+  margin-right: 20px;
+}
+.commentTitle > .timeOfDay {
+  font-weight: 300;
+  color: gray;
+}
+
+.comment {
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.comment > p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+/**
+* Button styles
+**/
+
+.linkButton {
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  background: none;
+  cursor: pointer;
+}
+.linkButton.active {
+  text-decoration: initial;
+  color: #4285f4;
+  font-weight: 600;
+  cursor: default;
 }
